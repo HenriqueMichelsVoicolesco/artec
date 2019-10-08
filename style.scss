@@ -1,0 +1,231 @@
+// @import 'normalize';
+
+$font: 'Arial';
+$background: white;
+$nav-color: rgb(62, 130, 255);
+
+@mixin flex-align-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin grid-12 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+body{
+    font-family: $font;
+    font-size: 12;
+    margin: 0;
+    background-color: $background;
+}
+
+.navbar{
+    display: flex;
+    width: 100%;
+    position: fixed;
+    padding: 0.5em;
+
+    .nav-logo{
+        margin-right: auto;
+        margin-left: 1em;
+        img{
+            width: 3em;
+        }
+    }
+    
+    .nav-toggle{
+        border: none;
+        align-items: center;
+        background: transparent;
+        cursor: pointer;
+        margin-left: auto;
+        margin-right: 2em;
+        svg{
+            color: black;
+            fill: currentColor;
+            width: 3em;
+        }
+    }
+    
+    .nav-group{
+        top: 2.8em;
+        left: 0;
+        width: 100%;
+        background: $nav-color;
+        display: none;
+        position: absolute;
+        list-style: none;
+        .nav-item{
+            padding: 0.5em;
+
+            .nav-link{
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+section{
+    height: 100vh;
+}
+
+article{
+    display: block;
+    text-align: center;
+}
+
+.home {
+    @include grid-12;
+    
+    article{
+        grid-column-start: 3;
+        grid-column-end: 11;
+        grid-row-start: 4;
+        grid-row-end: 13;
+
+        .logo-artec{
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            width: 12em;
+        }
+
+        p{
+            text-align: justify;
+            margin-top: 3em;
+            margin-bottom: 3em;
+        }
+
+        .btn-red{
+            background-color: #D62525;
+            color: white;
+            text-decoration: none;
+            border: 1px solid #D62525;
+            border-radius: 3px 20px 3px 20px;
+            padding: 0.6em 1.5em;
+            box-shadow: 5px 5px 10px 3px rgba(0,0,0,0.1);
+        }
+    }
+}
+
+.servicos{
+    @include grid-12;
+    
+    article{
+        grid-column-start: 2;
+        grid-column-end: 12;
+        grid-row-start: 1;
+        grid-row-end: 12;
+
+        .title{
+            font-size: 3.5em;
+        }
+
+        .card-group{
+            @include flex-align-center;
+            flex-wrap: wrap;
+            align-items: stretch;
+            
+            .card{
+                margin: 0 2em;
+                padding: 1em;
+                box-shadow: 10px 10px 10px -5px rgba(0,0,0,0.1);
+
+                img{
+                    width: 10em;
+                }
+                
+                h3{
+                    font-weight:normal;
+                    letter-spacing: 0.09em;
+                }
+                
+                p{
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
+    
+@media screen and (min-width: 720px){
+    .navbar{
+        @include flex-align-center;
+        background-color: transparent;
+            
+        .nav-logo{
+            width: 50px;
+            margin-left: 3em;
+            margin-right: auto;
+        }
+
+        .nav-toggle{
+            display: none;
+        }
+        
+        .nav-group{
+            top: 0;
+            position: relative;
+            width: auto;
+            background: transparent;
+            display: flex;
+            flex-direction: column;
+            flex-direction: row;
+            margin-right: 3em;
+            margin-left: auto;
+
+            .nav-item{
+                padding: 0.3em 0.8em;
+                
+                .nav-link{
+                    color: black;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .home{
+        
+        article{
+            grid-column-start: 3;
+            grid-column-end: 11;
+            grid-row-start: 4;
+            grid-row-end: 11;
+
+            .logo-artec{
+                width: 20em;
+            }
+        }
+    }
+
+    .servicos{
+
+        article{
+            grid-row-start: 2;
+
+            .card-group{
+                
+                .card{
+                    width: 22%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px){
+
+    .home{
+        article{
+            .logo-artec{
+                width: 25em;
+            }
+        }
+    }
+}

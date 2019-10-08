@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <a class="nav-logo" href="#">
+            <img class="nav-logo" src='grupo_17.svg'>
+        </a>
+
+        <button class="nav-toggle">
+            <svg version="1.1" id="Untitled-2" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 18 12" enable-background="new 0 0 18 12" xml:space="preserve">
+                <path fill="none" d="z" />
+                <g id="Layer_x25_201">
+                    <rect width="18" height="2" />
+                    <rect y="5" width="18" height="2" />
+                    <rect y="10" width="18" height="2" />
+                </g>
+                <path fill="none" d="z" />
+            </svg>
+        </button>
+
+        <ul class="nav-group">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Parceiros</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Localização</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
+        </ul>
+    </nav>
+
+    <section class="home">
+        <article class="">
+            <img class="logo-artec" src="grupo_19.svg" alt="">
+            <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et
+                dolore magna aliqua. Vitae congue mauris rhoncus aenean vel. Ullamcorper malesuada proin libero nunc
+                consequat interdum varius. Et leo duis ut diam quam nulla porttitor massa id. Congue nisi vitae suscipit
+                tellus mauris a diam.</p>
+            <a class="btn-red" href="#">Vamos Lá</a>
+        </article>
+    </section>
+
+    <section class="servicos" id="servicos">
+        <article>
+            <h1 class="title">Serviços</h1>
+            <div class="card-group">
+                <div class="card">
+                    <img src="house.svg" alt="">
+                    <h3>Refrigeração Doméstica</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et
+                        dolore magna aliqua. Vitae congue mauris rhoncus aenean vel.</p>
+                </div>
+                <div class="card">
+                    <img src="market.svg" alt="">
+                    <h3>Refrigeração Comercial</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et
+                        dolore magna aliqua. Vitae congue mauris rhoncus aenean vel.</p>
+                </div>
+                <div class="card">
+                    <img src="factory.svg" alt="">
+                    <h3>Refrigeração Industrial</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et
+                        dolore magna aliqua. Vitae congue mauris rhoncus aenean vel.</p>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section class="parceiros">
+        <article></article>
+    </section>
+
+    <section class="localizao">
+        <article></article>
+    </section>
+
+    <section class="contato">
+        <article></article>
+    </section>
+
+    <section class="sobre">
+        <article></article>
+    </section>
+
+</body>
+<script>
+    window.addEventListener('scroll', function (e) {
+        var nav = document.getElementById('navbar');
+        var toggle = document.getElementById('toggle');
+        if (document.documentElement.scrollTop || document.body.scrollTop > window.innerHeight) {
+            nav.style.backgroundColor = "white";
+            } else {
+            nav.style.backgroundColor = "transparent";
+            }
+    });
+</script>
+</html>

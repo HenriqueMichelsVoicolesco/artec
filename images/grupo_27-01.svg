@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="1591.9667969px" height="564.0473633px" viewBox="0 526.6831055 1591.9667969 564.0473633"
+	 enable-background="new 0 526.6831055 1591.9667969 564.0473633" xml:space="preserve">
+	 <defs><style>.a{fill:url(#a);}.b{fill:url(#d);}.c{filter:url(#e);}.d{filter:url(#b);}</style>
+<linearGradient id="a" x1="0.411" y1="1" x2="0.822" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#98b5ef"/>
+<stop offset="1" stop-color="#7194f3"/></linearGradient><filter id="b" x="0" y="0" width="1590.356" height="1090.731" filterUnits="userSpaceOnUse">
+<feOffset dx="12" dy="20" input="SourceAlpha"/><feGaussianBlur stdDeviation="20" result="c"/>
+<feFlood flood-opacity="0.051"/><feComposite operator="in" in2="c"/><feComposite in="SourceGraphic"/>
+</filter><linearGradient id="d" x1="0.411" y1="1" x2="0.822" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#7194f3"/>
+<stop offset="1" stop-color="#98b5ef"/></linearGradient><filter id="e" x="15.572" y="216.405" width="2492.596" height="788.35" filterUnits="userSpaceOnUse">
+<feOffset dx="12" dy="20" input="SourceAlpha"/><feGaussianBlur stdDeviation="20" result="f"/><feFlood flood-opacity="0.051"/>
+<feComposite operator="in" in2="f"/><feComposite in="SourceGraphic"/></filter></defs>
+<g transform="translate(330.06 39.545)">
+	<g class="d" transform="matrix(1, 0, 0, 1, -330.06, -39.55)">
+		<path class="a" d="M153.5,40.0001221l1364.8554688,788l-105.5,182.7314453L48,222.7315674L153.5,40.0001221z"/>
+	</g>
+	<g class="c" transform="matrix(1, 0, 0, 1, -330.06, -39.55)">
+		<path class="b" d="M109.0698242,259.4000244l2315.7407227,401.7104492l-44.5410156,256.7597656L64.5302734,516.1602783
+			L109.0698242,259.4000244z"/>
+	</g>
+</g>
+</svg>
