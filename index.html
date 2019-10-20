@@ -5,107 +5,217 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 
 <body>
     <nav class="navbar" id="navbar">
-        <a class="nav-logo" href="#">
-            <img class="nav-logo" src='grupo_17.svg'>
-        </a>
+        <div class="header">
 
-        <button class="nav-toggle">
-            <svg version="1.1" id="Untitled-2" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                viewBox="0 0 18 12" enable-background="new 0 0 18 12" xml:space="preserve">
-                <path fill="none" d="z" />
-                <g id="Layer_x25_201">
-                    <rect width="18" height="2" />
-                    <rect y="5" width="18" height="2" />
-                    <rect y="10" width="18" height="2" />
-                </g>
-                <path fill="none" d="z" />
-            </svg>
-        </button>
+            <a class="nav-logo" href="#">
+                <img class="nav-logo" src='grupo_17.svg'>
+            </a>
 
-        <ul class="nav-group">
+            <a class="nav-toggle" id="toggle">
+                <svg version="1.1" id="Untitled-2" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 12"
+                    enable-background="new 0 0 18 12" xml:space="preserve">
+                    <path fill="none" d="z" />
+                    <g id="Layer_x25_201">
+                        <rect width="18" height="2" />
+                        <rect y="5" width="18" height="2" />
+                        <rect y="10" width="18" height="2" />
+                    </g>
+                    <path fill="none" d="z" />
+                </svg>
+            </a>
+        </div>
+
+        <ul class="nav-group hidden" id="nav-group">
             <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Parceiros</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Localização</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+            <li class="nav-item"><a class="nav-link" href="#localizacao">Localização</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
         </ul>
     </nav>
 
-    <section class="home">
-        <article class="">
-            <img class="logo-artec" src="grupo_19.svg" alt="">
-            <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et
-                dolore magna aliqua. Vitae congue mauris rhoncus aenean vel. Ullamcorper malesuada proin libero nunc
-                consequat interdum varius. Et leo duis ut diam quam nulla porttitor massa id. Congue nisi vitae suscipit
-                tellus mauris a diam.</p>
-            <a class="btn-red" href="#">Vamos Lá</a>
-        </article>
+    <section class="home full-height align-all-center">
+        <div class="row">
+            <div class="col s12">
+                <div class="container align-text-center">
+                    <img class="logo-artec" src="grupo_19.svg" alt="">
+                    <p class="align-text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut
+                        labore et
+                        dolore magna aliqua. Vitae congue mauris rhoncus aenean vel. Ullamcorper malesuada proin libero
+                        nunc
+                        consequat interdum varius. Et leo duis ut diam quam nulla porttitor massa id. Congue nisi vitae
+                        suscipit
+                        tellus mauris a diam.</p>
+                    <a class="btn-red" href="#">Vamos Lá</a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="servicos" id="servicos">
-        <article>
-            <h1 class="title">Serviços</h1>
-            <div class="card-group">
-                <div class="card">
-                    <img src="house.svg" alt="">
-                    <h3>Refrigeração Doméstica</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et
-                        dolore magna aliqua. Vitae congue mauris rhoncus aenean vel.</p>
-                </div>
-                <div class="card">
-                    <img src="market.svg" alt="">
-                    <h3>Refrigeração Comercial</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et
-                        dolore magna aliqua. Vitae congue mauris rhoncus aenean vel.</p>
-                </div>
-                <div class="card">
-                    <img src="factory.svg" alt="">
-                    <h3>Refrigeração Industrial</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et
-                        dolore magna aliqua. Vitae congue mauris rhoncus aenean vel.</p>
+        <div class="row full-height align-all-center">
+            <div class="col s12">
+                <div class="container">
+                    <h1 class="title align-text-center">Serviços</h1>
+                    <div class="card-group">
+                        <div class="row">
+                            <div class="col s12 l4">
+                                <div class="card align-text-center">
+                                    <img src="house.svg" alt="">
+                                    <h3 class="align-text-center">Refrigeração Doméstica</h3>
+                                    <p class="align-text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit, sed do eiusmod tempor incididunt ut
+                                        labore et
+                                        dolore magna aliqua. Vitae congue mauris rhoncus aenean vel.</p>
+                                </div>
+                            </div>
+                            <div class="col s12 l4">
+                                <div class="card align-text-center">
+                                    <img src="market.svg" alt="">
+                                    <h3 class="align-text-center">Refrigeração Comercial</h3>
+                                    <p class="align-text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit, sed do eiusmod tempor incididunt ut
+                                        labore et
+                                        dolore magna aliqua. Vitae congue mauris rhoncus aenean vel.</p>
+                                </div>
+                            </div>
+                            <div class="col s12 l4">
+                                <div class="card align-text-center">
+                                    <img src="factory.svg" alt="">
+                                    <h3 class="align-text-center">Refrigeração Industrial</h3>
+                                    <p class="align-text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit, sed do eiusmod tempor incididunt ut
+                                        labore et
+                                        dolore magna aliqua. Vitae congue mauris rhoncus aenean vel.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </article>
+        </div>
     </section>
 
-    <section class="parceiros">
-        <article></article>
+    <section class="parceiros hidden">
+        <div class="row">
+            <div class="col s12">
+                <div class="container"></div>
+            </div>
+        </div>
     </section>
 
-    <section class="localizao">
-        <article></article>
+    <section class="localizao" id="localizacao">
+        <div class="row full-height align-all-center">
+            <div class="col s12">
+                <div class="container">
+                    <h1 class="title align-text-center">Localização</h1>
+                    <div class="map" style="overflow:hidden;position: relative;"><iframe class="map"
+                            src="https://maps.google.com/maps?width=701&amp;height=440&amp;hl=en&amp;q=R.%20Gen.%20Flores%20da%20Cunha%2C%203391-3377%20-%20Centro+(Artec)&amp;ie=UTF8&amp;t=&amp;z=18&amp;iwloc=B&amp;output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        <style>
+                            #gmap_canvas img {
+                                max-width: none !important;
+                                background: none !important
+                            }
+                        </style>
+                    </div><br />
+                </div>
+
+            </div>
+        </div>
     </section>
 
-    <section class="contato">
-        <article></article>
+    <section class="contato" id='contato'>
+        <div class="row full-height align-all-center">
+            <div class="col s12">
+                <div class="container">
+                    <form action="POST" class="form-group">
+                        <h1 class="title align-text-center">Fale Conosco</h1>
+                        <div class="row">
+                            <div class="col s12 m6">
+                                <div class="form-input">
+                                    <label for="full-name"><small>Nome</small></label>
+                                    <input type="text" id="full-name" name="full-name"
+                                        placeholder="Insira seu nome completo">
+                                </div>
+                            </div>
+                            <div class="col s12 m6">
+                                <div class="form-input">
+                                    <label for="email"><small>Email</small></label>
+                                    <input type="email" id="email" name="email" placeholder="exemplo@exemplo.com">
+                                </div>
+                            </div>
+                            <div class="col s12 m6">
+                                <div class="form-input">
+                                    <label for="cellphone"><small>Telefone</small></label>
+                                    <input type="tel" id="cellphone" name="cellphone" placeholder="(55)90000-0000">
+                                </div>
+                            </div>
+                            <div class="col s12 m6">
+                                <div class="form-input">
+                                    <label for="cc"><small>Assunto</small></label>
+                                    <select name="opcoes" id="cc">
+                                        <option disabled selected>Selecione um assunto</option>
+                                        <option value="">Vendas</option>
+                                        <option value="">Dúvidas</option>
+                                        <option value="">Manutenção</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col s12">
+                                <div class="form-input">
+                                    <label for="message"><small>Mensagem</small></label>
+                                    <textarea name="message" id="message"></textarea>
+                                </div>
+                            </div>
+                            <div class="col s12 align-text-center">
+                                <button class="btn-red">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="sobre">
-        <article></article>
+    <section class="sobre full-height">
+        <div class="row">
+            <div class="col s12">
+                <div class="container"></div>
+            </div>
+        </div>
     </section>
 
 </body>
 <script>
-    window.addEventListener('scroll', function (e) {
+    window.addEventListener("DOMContentLoaded", function () {
         var nav = document.getElementById('navbar');
         var toggle = document.getElementById('toggle');
-        if (document.documentElement.scrollTop || document.body.scrollTop > window.innerHeight) {
-            nav.style.backgroundColor = "white";
+        var nav_group = document.getElementById('nav-group');
+
+        window.addEventListener('scroll', function () {
+            if (document.documentElement.scrollTop || document.body.scrollTop > window.innerHeight) {
+                nav.style.backgroundColor = "white";
+                nav.style.boxShadow = "0px 10px 10px -5px rgba(0, 0, 0, 0.1)";
             } else {
-            nav.style.backgroundColor = "transparent";
+                nav.style.backgroundColor = "transparent";
+                nav.style.boxShadow = "none";
             }
+        });
+
+        toggle.addEventListener("click", function () {
+            nav_group.classList.toggle("hidden");
+        });
     });
 </script>
+
 </html>
