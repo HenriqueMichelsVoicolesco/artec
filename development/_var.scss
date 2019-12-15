@@ -1,0 +1,18 @@
+$font: 'sf_pro_textregular';
+$font-title: 'alte_din_1451_mittelschriftRg';
+$background: white;
+$nav-color: white;
+
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+$extra-large: 1200px;
+$exxtra-large: 1440px;
+$exxxtra-large: 1600px;
+
+$small-devices: "only screen and (min-width : #{$small})";
+$medium-devices: "only screen and (min-width : #{$medium})";
+$large-devices: "only screen and (min-width : #{$large})";
+$extra-large-devices: "only screen and (min-width : #{$extra-large})";
+$exxtra-large-devices: "only screen and (min-width : #{$exxtra-large})";
+$exxxtra-large-devices: "only screen and (min-width : #{$exxxtra-large})";

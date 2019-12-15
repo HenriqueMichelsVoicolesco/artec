@@ -1,0 +1,35 @@
+@mixin col($media-query: null, $num-cols: 12) {
+  @if ($media-query) {
+    @media #{$media-query} {
+      @for $i from $num-cols to 0 {
+        &#{$i} {
+          width: unquote((100 / ($num-cols / $i)) + "%");
+        }
+      }
+    }
+  } @else {
+    @for $i from $num-cols to 0 {
+      &#{$i} {
+        width: unquote((100 / ($num-cols / $i)) + "%");
+      }
+    }
+  }
+}
+
+@mixin padding($type: null, $media-query: null, $max: 6) {
+  @if ($media-query) {
+    @media #{$media-query} {
+      @for $i from 0 to $max {
+        &#{$i} {
+          padding#{$type}: #{$i}em;
+        }
+      }
+    }
+  } @else {
+    @for $i from 0 to $max {
+      &#{$i} {
+        padding#{$type}: #{$i}em;
+      }
+    }
+  }
+}
