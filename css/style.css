@@ -1190,6 +1190,7 @@ body {
   font-family: "sf_pro_textregular";
   font-size: 1em;
   background-color: white;
+  overflow-x: hidden;
 }
 
 @media only screen and (min-width: 1440px) {
@@ -1296,7 +1297,7 @@ section {
 
 .home .arrow-button {
   position: absolute;
-  bottom: 2.5em;
+  bottom: 1em;
 }
 
 .home .arrow-button-img {
@@ -1458,10 +1459,6 @@ section {
 
 .footer .links a {
   color: black;
-}
-
-.footer .links a:hover {
-  color: red;
 }
 
 .footer .links img {
